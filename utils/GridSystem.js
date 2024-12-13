@@ -6,4 +6,12 @@ export class GridSystem {
     addRow(row = new Row()) {
         this.innerHTML += row;
     }
+
+    tostring() {
+        return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+    }
+
+    // addColumn(column = new Column()) {
+    //     this.innerHTML += column;
+    // }
 }
