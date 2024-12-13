@@ -1,4 +1,4 @@
-import { Column } from " /Column.js";
+import { Column } from "./Column.js";
 
 export class Row {
     openingTag = "‹div class='row'>";
