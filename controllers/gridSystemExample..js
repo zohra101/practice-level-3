@@ -21,3 +21,28 @@ export function gridSystemExample () {
 
     
 }
+
+function practice5() {
+
+    // const column = new Column("New Column");
+    // output(column, "outputTag5");
+
+    let rows = "";
+    for (let rowNumber = 1; rowNumber <= 3; rowNumber++) {
+        let columns = "";
+        for (let columnNumber = 1; columnNumber <= 3; columnNumber++) {
+            const column = new Column(`COLUMN ${ columnNumber}`);
+            column.info(columnNumber);
+            column. innerHTML = `COLUMN ${columnNumber}`;
+            column.content();
+            columns += column;
+        }
+
+        rows += `<div class="row">${columns}</div>`;
+    }
+    const gridSystem = `
+        <div class="container">
+            ${rows}
+            </div>`;
+    output (gridSystem, "outputTag5");
+}
