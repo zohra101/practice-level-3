@@ -1,3 +1,4 @@
+import { Row } from "./Row.js";
 export class GridSystem {
     openingTag = "<div class = 'container'>"
     closingTag = "</div>"
