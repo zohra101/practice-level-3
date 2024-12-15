@@ -1,5 +1,5 @@
 export class Column {
-    openingTag = "<div class = 'col' >";
+    openingTag = "<div class = 'col'>";
     closingTag = "</div>";
     innerHTML = "";
 

@@ -1,7 +1,7 @@
-import { Column } from "./Column.js";
+import { Column } from "../Column.js";
 
 export class Row {
-    openingTag = "‹div class='row'>";
+    openingTag = "<div class='row'>";
     closingTag = "</div>";
     innerHTML = "";
 
@@ -12,5 +12,4 @@ export class Row {
     tostring() {
         return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
     }
-
 }

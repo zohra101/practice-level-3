@@ -3,6 +3,6 @@ export function output (
     outputTag = "outputTag",
     shouldAppend = true
     ) {
-        if (shouldAppend) window[outputTag].innerHTML
+        if (shouldAppend) window[outputTag].innerHTML += message;
         else window[outputTag].innerHTML = message;
     }
