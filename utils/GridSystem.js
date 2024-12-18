@@ -8,11 +8,7 @@ export class GridSystem {
         this.innerHTML += row;
     }
 
-    tostring() {
+    toString() {
         return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
     }
-
-    // addColumn(column = new Column()) {
-    //     this.innerHTML += column;
-    // }
 }
